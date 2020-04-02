@@ -1,7 +1,10 @@
+variable "tenant_environment" {}
+
+
 module "app_a" {
   source  = "app.terraform.io/KPSC/tenant/openstack"
   version = "0.0.2"
 
   tenant_name        = "web"
-  tenant_environment = "lab"
+  tenant_environment = var.tenant_environment
 }
