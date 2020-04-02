@@ -3,7 +3,7 @@ output "tenant_name" {
 }
 
 output "environment" {
-  value = module.app_a.tenant_name.environment
+  value = module.app_a.environment
 }
 
 output "network_name" {
